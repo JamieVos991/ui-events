@@ -39,3 +39,19 @@ scaleLink.addEventListener('click', function() {
 scaleLink.addEventListener('animationend', function() {
   scaleLink.classList.remove('scaleLink')
 })
+
+// Stap 1: querySelector
+let translateLink = document.querySelector('a[href="#and"]');
+
+// Stap 2: addEventListener
+translateLink.addEventListener('click', function() {
+
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  translateLink.classList.add('translateLink');
+})
+
+// Stap 4: Animationend event, zodat ik de animation opnieuw kan klikken
+translateLink.addEventListener('animationend', function() {
+  translateLink.classList.remove('translateLink');
+})
+

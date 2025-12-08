@@ -96,3 +96,13 @@ a[href="#design"] {
     transform: scaleX(60%);
   }
 }
+
+.translateLink {
+  animation: translateLink 2s;
+}
+
+@keyframes translateLink {
+  100% {
+    transform: translate(800px, 800px);
+  }
+}
