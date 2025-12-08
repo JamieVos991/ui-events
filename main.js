@@ -55,3 +55,18 @@ translateLink.addEventListener('animationend', function() {
   translateLink.classList.remove('translateLink');
 })
 
+// Stap 1: querySelector
+let translatexLink = document.querySelector('a[href="#development"]');
+
+// Stap 2: addEventListener
+translatexLink.addEventListener('dblclick', function() {
+
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  translatexLink.classList.add('translatexLink');
+})
+
+// Stap 4: Animationend event, zodat ik de animation opnieuw kan klikken
+translatexLink.addEventListener('animationend', function() {
+  translatexLink.classList.remove('translatexLink');
+})
+

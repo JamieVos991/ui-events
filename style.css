@@ -106,3 +106,24 @@ a[href="#design"] {
     transform: translate(800px, 800px);
   }
 }
+
+.translatexLink {
+  animation: translatexLink 1s;
+}
+
+@keyframes translatexLink {
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(20px);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-20px);
+  }
+}
