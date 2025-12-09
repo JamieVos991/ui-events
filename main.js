@@ -94,7 +94,16 @@ fixLink.addEventListener('mouseleave', function () {
 });
 
 
+// 7. The Link
 
+let theLink = document.querySelector('a[href="#the"]');
 
+theLink.addEventListener('mouseout', function() {
+  theLink.classList.add('theLink'); 
+})
+
+theLink.addEventListener('animationend', function() {
+  theLink.classList.remove('theLink');
+})
 
 

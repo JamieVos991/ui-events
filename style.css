@@ -137,3 +137,13 @@ a[href="#design"] {
     background-color: red;
   }
 }
+
+.theLink {
+  animation: theLink 1s;
+}
+
+@keyframes theLink {
+  50% {
+    transform: rotate(90deg);
+  }
+}
