@@ -22,66 +22,62 @@ designLink.addEventListener('animationend', jumpHandler)
 
 
 
-// Ga zelf verder met de overige elementen, aan de hand van de instructies
-// Maak bijvoorbeeld een scale animatie als je op de Frontend link klikt
+// 1. Scale Link 
 
-// Stap 1: querySelector
 let scaleLink = document.querySelector('a[href="#frontend"]');
 
-// Stap 2: addEventListener
 scaleLink.addEventListener('click', function() {
 
-  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
   scaleLink.classList.add('scaleLink');
 })
 
-// Stap 4: Animationend event, zodat ik de animation opnieuw kan klikken
 scaleLink.addEventListener('animationend', function() {
   scaleLink.classList.remove('scaleLink')
 })
 
-// Stap 1: querySelector
+
+// 2. Translate Link
+
 let translateLink = document.querySelector('a[href="#and"]');
 
-// Stap 2: addEventListener
 translateLink.addEventListener('click', function() {
 
-  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
   translateLink.classList.add('translateLink');
 })
 
-// Stap 4: Animationend event, zodat ik de animation opnieuw kan klikken
 translateLink.addEventListener('animationend', function() {
   translateLink.classList.remove('translateLink');
 })
 
-// Stap 1: querySelector
+
+// 4. TranslateX link
+
 let translatexLink = document.querySelector('a[href="#development"]');
 
-// Stap 2: addEventListener
 translatexLink.addEventListener('dblclick', function() {
 
-  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
   translatexLink.classList.add('translatexLink');
 })
 
-// Stap 4: Animationend event, zodat ik de animation opnieuw kan klikken
 translatexLink.addEventListener('animationend', function() {
   translatexLink.classList.remove('translatexLink');
 })
 
-// Stap 1: querySelector
+
+// 5. Focus link
+
 let focusLink = document.querySelector('a[href="#sprint-5"]');
 
-// Stap 2: addEventListener
 focusLink.addEventListener('focus', function() {
 
-  console.log("werkt")
-  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
   focusLink.classList.add('focusLink');
 })
 
-// Stap 4: Animationend event, zodat ik de anim ation opnieuw kan klikken
 focusLink.addEventListener('animationend', function() {
   focusLink.classList.remove('focusLink');
 })
+
+
+
+
+
