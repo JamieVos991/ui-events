@@ -127,3 +127,13 @@ a[href="#design"] {
     transform: translateX(-20px);
   }
 }
+
+.focusLink {
+  animation: focusLink 4s;
+}
+
+@keyframes focusLink {
+  50% {
+    background-color: red;
+  }
+}

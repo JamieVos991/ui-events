@@ -70,3 +70,18 @@ translatexLink.addEventListener('animationend', function() {
   translatexLink.classList.remove('translatexLink');
 })
 
+// Stap 1: querySelector
+let focusLink = document.querySelector('a[href="#sprint-5"]');
+
+// Stap 2: addEventListener
+focusLink.addEventListener('focus', function() {
+
+  console.log("werkt")
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  focusLink.classList.add('focusLink');
+})
+
+// Stap 4: Animationend event, zodat ik de anim ation opnieuw kan klikken
+focusLink.addEventListener('animationend', function() {
+  focusLink.classList.remove('focusLink');
+})
