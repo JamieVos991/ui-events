@@ -78,6 +78,23 @@ focusLink.addEventListener('animationend', function() {
 })
 
 
+// 6. Fix Link
+
+let fixLink = document.querySelector('a[href="#fix"]');
+let fixLinkText = fixLink.textContent; 
+
+fixLink.addEventListener('mouseover', function() {
+
+  fixLink.textContent = "hey"; 
+})
+
+fixLink.addEventListener('mouseleave', function () {
+
+  fixLink.textContent = fixLinkText; 
+});
+
+
+
 
 
 
