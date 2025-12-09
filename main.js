@@ -107,3 +107,16 @@ theLink.addEventListener('animationend', function() {
 })
 
 
+// 8. Flow Link
+
+let flowLink = document.querySelector('a[href="#flow"]');
+
+flowLink.addEventListener('mousedown', function() {
+  flowLink.classList.add('flowLink'); 
+  flowLink.classList.remove('flowLink-2');
+})
+
+flowLink.addEventListener('mouseup', function() {
+  flowLink.classList.remove('flowLink');
+  flowLink.classList.add('flowLink-2')
+})
